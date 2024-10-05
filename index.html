@@ -8,25 +8,25 @@
     <style>
         body {
             font-family: 'Cairo', sans-serif;
-            background-color: #ffffff; /* White background for contrast */
-            color: #ffffff; /* Default text color */
+            background-color: #ffffff; 
+            color: #ffffff; 
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* Full height */
+            height: 100vh; 
             margin: 0;
-            padding: 0; /* Ensure no padding around the body */
+            padding: 0; 
         }
         .container {
             text-align: center;
-            background: linear-gradient(135deg, rgba(255, 0, 0, 0.7) 65%, rgba(255, 165, 0, 0.5) 65%, rgba(255, 255, 255, 0.1)); /* Red and orange gradient */
-            padding: 2.5% 5%; /* Responsive padding */
+            background: linear-gradient(135deg, rgba(255, 0, 0, 0.7) 65%, rgba(255, 165, 0, 0.5) 65%, rgba(255, 255, 255, 0.1)); 
+            padding: 2.5% 5%; 
             border-radius: 15px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-            position: relative; /* For positioning the lightning borders */
-            overflow: hidden; /* To clip the lightning effect */
-            width: 90%; /* Width of container for responsiveness */
-            max-width: 600px; /* Max width to prevent it from getting too large on larger screens */
+            position: relative; 
+            overflow: hidden; 
+            width: 90%; 
+            max-width: 600px; 
         }
         .container:before, .container:after {
             content: '';
@@ -35,28 +35,28 @@
             height: 100%;
             left: 0;
             top: 0;
-            border: 5px solid rgba(255, 255, 255, 0.3); /* White border */
+            border: 5px solid rgba(255, 255, 255, 0.3); 
             border-radius: 15px;
-            pointer-events: none; /* Allow clicks to pass through */
-            z-index: -1; /* Behind the content */
+            pointer-events: none; 
+            z-index: -1; 
         }
         .container:before {
-            filter: blur(5px); /* Blur effect for the border */
+            filter: blur(5px); 
         }
         h1 {
-            font-size: 2.5em; /* Responsive font size */
+            font-size: 2.5em; 
             margin-bottom: 20px;
-            color: #ffffff; /* White text for header */
+            color: #ffffff; 
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         }
         .counter {
-            font-size: 1.5em; /* Responsive font size */
+            font-size: 1.5em; 
             margin-top: 20px;
-            background: rgba(0, 0, 0, 0.3); /* Dark background for counter */
+            background: rgba(0, 0, 0, 0.3); 
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-            color: #f2f2f2; /* Text color for counter */
+            color: #f2f2f2; 
         }
         @keyframes fadeIn {
             0% {
@@ -69,23 +69,23 @@
             }
         }
 
-        /* Media Queries for Responsive Design */
+       
         @media (max-width: 768px) {
             h1 {
-                font-size: 2em; /* Smaller font size for tablets */
+                font-size: 2em; 
             }
             .counter {
-                font-size: 1.2em; /* Smaller font size for tablets */
+                font-size: 1.2em; 
             }
         }
 
         @media (max-width: 480px) {
             h1 {
-                font-size: 1.5em; /* Smaller font size for mobile */
+                font-size: 1.5em; 
             }
             .counter {
-                font-size: 1em; /* Smaller font size for mobile */
-                padding: 15px; /* Adjust padding for mobile */
+                font-size: 1em; 
+                padding: 15px; 
             }
         }
     </style>
